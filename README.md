@@ -16,7 +16,7 @@ HTML, CSS, JavaScript(jQuery), SQL(MySQL v8.0.20), PHP(v7.4.7)
 Amazon Lightsail
 
 
-#### その他使用したもの
+#### その他に使用したコンテンツ
 phpMyAdmin
 
 Git(Github, Sourcetree)
