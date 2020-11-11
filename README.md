@@ -21,6 +21,6 @@ phpMyAdmin
 
 Git(Github, Sourcetree)
 
-Conoha VPS(簡易的な環境構築に使用)
+Conoha VPS(テスト環境の構築に使用)
 
 Amazon Route 53
