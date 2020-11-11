@@ -21,6 +21,10 @@ phpMyAdmin
 
 Git(Github, Sourcetree)
 
-Conoha VPS(テスト環境の構築に使用)
-
 Amazon Route 53
+
+Let's Encrypt
+
+Conoha VPS(テスト環境の構築に使用。CentOS8にて、LAMP環境を構築)
+
+
