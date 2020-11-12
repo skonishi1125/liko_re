@@ -365,6 +365,10 @@ button{
 	background-color: rgba(120,140,230,1);	
 }
 
+.no-js .back-to-top{
+	display: none;
+}
+
 
 
 footer{
@@ -520,6 +524,10 @@ footer{
 /*-----responsive----*/
 
 @media screen and (max-width: 990px){
+	.res-pc{
+		display: none;
+	}
+
 
 	.res-phone{
 		display: block;
@@ -609,13 +617,19 @@ footer{
 	}
 
 	.profile-container{
-		width: 100%;
 		text-align: center;
 	}
 
 	.profile-container img{
 		width: 85%;
 		max-width: 400px;
+	}
+
+	.profile-wrapper-left-contents{
+		width: 85%;
+		text-align: left;
+		max-width: 400px;
+		margin: 0 auto;
 	}
 
 
