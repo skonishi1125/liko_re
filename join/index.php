@@ -351,7 +351,8 @@ if($_REQUEST['action'] == 'rewrite'){
 
                 <div class="col-md-6 profile-wrapper-left-contents">
                     <div class="row">
-                        <h4><b>小西 慧</b></h4>
+                        <h4><b>名前</b></h4>
+                        <h5><b>小西 慧</b>(Satoru Konishi)</h5>  
                         <p>1996年11月25日生まれ (2020年11月現在:24歳) </p>
                     </div>
 
@@ -360,8 +361,20 @@ if($_REQUEST['action'] == 'rewrite'){
                         <p>イラスト描画、ランニング、eSports</p>
                     </div>
                     <div class="row">
-                        <h4>Github</h4>
-                        <a href="https://github.com/skonishi1125/liko_re">https://github.com/skonishi1125/liko_re</a>                       
+                        <h4>SNSなど</h4>
+                        <ul>
+                            <li>
+                                <p>Qiita</p>
+                                <a href="https://qiita.com/skonishi1125">https://qiita.com/skonishi1125</a>
+                            </li>
+                            <br>                            
+                            <li>
+                                <p>Github</p>
+                                <a href="https://github.com/skonishi1125/liko_re">https://github.com/skonishi1125/liko_re</a>
+                            </li>
+                            <br>
+                        </ul>
+                   
                     </div>
                 </div>
 

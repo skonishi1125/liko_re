@@ -369,6 +369,14 @@ button{
 	display: none;
 }
 
+.profile-wrapper-left{
+	text-align: center;
+}
+
+.profile-wrapper-left-contents li{
+	margin-left: 25px;
+}
+
 
 
 footer{
