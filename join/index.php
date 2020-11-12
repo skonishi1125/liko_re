@@ -345,13 +345,24 @@ if($_REQUEST['action'] == 'rewrite'){
             </div>  
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 profile-wrapper-left">
                     <img src="profile.png" class="profileImg">
                 </div>
 
-                <div class="col-md-6">
-                    <h4>小西 慧</h4>
-                    <p>1996年11月25日生まれ (2020年11月現在:24歳) </p>
+                <div class="col-md-6 profile-wrapper-left-contents">
+                    <div class="row">
+                        <h4><b>小西 慧</b></h4>
+                        <p>1996年11月25日生まれ (2020年11月現在:24歳) </p>
+                    </div>
+
+                    <div class="row">
+                        <h4><b>趣味</b></h4>
+                        <p>イラスト描画、ランニング、eSports</p>
+                    </div>
+                    <div class="row">
+                        <h4>Github</h4>
+                        <a href="https://github.com/skonishi1125/liko_re">https://github.com/skonishi1125/liko_re</a>                       
+                    </div>
                 </div>
 
 
@@ -359,20 +370,16 @@ if($_REQUEST['action'] == 'rewrite'){
         </div><!-- container 20.11.8追加 -->
 
 
-
-
-
-
-
-
         <div class="container">
             <div class="col-md-12 top-btn">
-                <a href="#top">
+                <a class="back-to-top">
                     Topへ戻る
                     <i class="fas fa-angle-up"></i>
                 </a>
             </div>
         </div>
+
+        <!-- ipadでも動くようにしなさい progate頼ってみてもいいかも -->
 
 
         <footer>
