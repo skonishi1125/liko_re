@@ -350,7 +350,7 @@ button{
 
 }
 
-.top-btn a{
+.top-btn button{
 	color: white;
 	font-size: 20px;
 	background-color: rgba(88,117,198,1);
@@ -358,7 +358,7 @@ button{
 	border-radius: 10px;	
 }
 
-.top-btn a:hover{
+.top-btn button:hover{
 	text-decoration: none;
 	color: white;
 	cursor: pointer;

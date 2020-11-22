@@ -385,7 +385,7 @@ if($_REQUEST['action'] == 'rewrite'){
 
         <div class="container">
             <div class="col-md-12 top-btn">
-                <a class="back-to-top">
+                <button type="button" class="back-to-top">
                     Topへ戻る
                     <i class="fas fa-angle-up"></i>
                 </a>
