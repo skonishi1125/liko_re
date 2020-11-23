@@ -125,35 +125,35 @@ if($_REQUEST['action'] == 'rewrite'){
                 </div>
                 <div class="register-form">
                     <form action="" method="post" enctype="multipart/form-data">
-                        <p><b>ハンドルネーム</b></p>
+                        <p><span class="badge badge-danger">必須</span><b>ハンドルネーム</b></p>
                         <input type="text" name="name" size="35" 
                         maxlength="255" value="<?php echo h($_POST['name']); ?>">
                         <?php //フォームに入れた値を残しておく処理：valueに$_POSTの値を入れておく ?>
                         <?php if($error['name'] == 'blank') : ?>
-                            <p class="checkRed">※未入力</p>
+                            <p class="checkRed">※必須の項目です。</p>
                         <?php endif; ?>
 
-                        <p><b>メールアドレス</b></p>
+                        <p><span class="badge badge-danger">必須</span><b>メールアドレス</b></p>
                         <input type="text" name="email" size="35" 
                         maxlength="255" value="<?php echo h($_POST['email']); ?>">
                         <?php if($error['email'] == 'blank') : ?>
-                            <p class="checkRed">※未入力</p>
+                            <p class="checkRed">※必須の項目です。</p>
                         <?php endif; ?>
                         <?php if($error['email'] == 'duplicate') : ?>
                             <p class="checkRed">※既に使用されているメールアドレスです。</p>
                         <?php endif; ?>
 
-                        <p><b>パスワード</b> (4文字以上)</p>
+                        <p><span class="badge badge-danger">必須</span><b>パスワード</b> (4文字以上)</p>
                         <input type="password" name="password" size="10" 
                         maxlength="20" value="<?php echo h($_POST['password']); ?>">
                         <?php if($error['password'] == 'blank') : ?>
-                            <p class="checkRed">※未入力</p>
+                            <p class="checkRed">※必須の項目です。</p>
                         <?php endif; ?>
                         <?php if($error['password'] == 'length') : ?>
                             <p class="checkRed">※パスワードは4文字以上としてください</p>
                         <?php endif; ?>
 
-                        <p><b>アイコン画像の選択</b> ( jpeg, gif, pngに対応)</p>
+                        <p><span class="badge badge-success">任意</span><b>アイコン画像の選択</b> ( jpeg, gif, pngに対応)</p>
                         <input class="inputIcon" type="file" name="image" size="35">
                         <?php if($error['image'] == 'type') : ?>
                             <p class="checkRed">※対応していない拡張子のファイルです。</p>
@@ -169,7 +169,7 @@ if($_REQUEST['action'] == 'rewrite'){
         </div>
 
         <div class="res-phone container">
-            <div class="col-md-12 resRegi-wrapper">
+            <div class="col-md-12 resregi-wrapper">
                 <div class="center-bar"></div>                
                 <div class="contents-title">
                     <h2>登録して投稿しよう</h2>
@@ -177,35 +177,35 @@ if($_REQUEST['action'] == 'rewrite'){
 
                 <div class="resregi-form">
                     <form action="" method="post" enctype="multipart/form-data">
-                        <p><b>ハンドルネーム</b></p>
+                        <p><span class="badge badge-danger">必須</span><b>ハンドルネーム</b></p>
                         <input type="text" name="name" size="35" 
                         maxlength="255" value="<?php echo h($_POST['name']); ?>">
                         <?php //フォームに入れた値を残しておく処理：valueに$_POSTの値を入れておく ?>
                         <?php if($error['name'] == 'blank') : ?>
-                            <p class="checkRed">※未入力</p>
+                            <p class="checkRed">※必須の項目です。</p>
                         <?php endif; ?>
 
-                        <p><b>メールアドレス</b></p>
+                        <p><span class="badge badge-danger">必須</span><b>メールアドレス</b></p>
                         <input type="text" name="email" size="35" 
                         maxlength="255" value="<?php echo h($_POST['email']); ?>">
                         <?php if($error['email'] == 'blank') : ?>
-                            <p class="checkRed">※未入力</p>
+                            <p class="checkRed">※必須の項目です。</p>
                         <?php endif; ?>
                         <?php if($error['email'] == 'duplicate') : ?>
                             <p class="checkRed">※既に使用されているメールアドレスです。</p>
                         <?php endif; ?>
 
-                        <p><b>パスワード</b> (4文字以上)</p>
+                        <p><span class="badge badge-danger">必須</span><b>パスワード</b> (4文字以上)</p>
                         <input type="password" name="password" size="10" 
                         maxlength="20" value="<?php echo h($_POST['password']); ?>">
                         <?php if($error['password'] == 'blank') : ?>
-                            <p class="checkRed">※未入力</p>
+                            <p class="checkRed">※必須の項目です。</p>
                         <?php endif; ?>
                         <?php if($error['password'] == 'length') : ?>
                             <p class="checkRed">※パスワードは4文字以上としてください</p>
                         <?php endif; ?>
 
-                        <p><b>アイコン画像の選択</b> ( jpeg, gif, pngに対応)</p>
+                        <p><span class="badge badge-success">任意</span><b>アイコン画像の選択</b>(jpeg, gif, png)</p>
                         <input class="inputIcon" type="file" name="image" size="35">
                         <?php if($error['image'] == 'type') : ?>
                             <p class="checkRed">※対応していない拡張子のファイルです。</p>
@@ -215,7 +215,7 @@ if($_REQUEST['action'] == 'rewrite'){
                         <?php endif; ?>
                         <br>
                         <input class="submitBtn fright" type="submit" value="入力内容を確認する">
-                    </form>                    
+                    </form>
                 </div>
 
             </div>
@@ -224,13 +224,14 @@ if($_REQUEST['action'] == 'rewrite'){
 
 
 
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="col-md-12 intro-wrapper">
                 <div class="center-bar"></div>
                 <div class="contents-title">
                     <h2>Likoとは</h2>
                 </div>
+
                 <div class="col-md-8 pic-container">
                     <img src="intro1.png">
                 </div>
@@ -247,7 +248,7 @@ if($_REQUEST['action'] == 'rewrite'){
             <div class="container">
 
                 <div class="col-md-12 intro-wrapper">
-                    <div class="center-bar"></div>
+                    <div class="center-yellow-bar"></div>
                     <div class="contents-title">
                         <h2>基本機能について</h2>
                     </div>

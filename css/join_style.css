@@ -194,6 +194,16 @@ button{
 	margin-top: 5px;
 }
 
+.badge-danger{
+	background-color: red !important;
+	margin-right: 5px;
+}
+
+.badge-success{
+	background-color: green !important;
+	margin-right: 5px;
+}
+
 .inputIcon{
 	font-size: 12px;
 }
@@ -212,6 +222,12 @@ button{
 .center-bar{
 	width: 80px;
 	border-bottom: 4px solid #999;
+	margin: 0 auto;
+}
+
+.center-yellow-bar{
+	width: 80px;
+	border-bottom: 4px solid rgba(255,205,73,1);
 	margin: 0 auto;
 }
 
@@ -540,7 +556,6 @@ footer{
 		display: none;
 	}
 
-
 	.res-phone{
 		display: block;
 	}
@@ -589,7 +604,7 @@ footer{
 	}
 
 	.subHeader-wrapper{
-		height: 250px;
+		height: 400px;
 	}
 
 	.subHeader-logo{
@@ -607,14 +622,19 @@ footer{
 		display: none;
 	}
 
+	.resRegi-wrapper{
+
+	}
+
 	.resregi-form{
-		border: 3px solid rgba(255,205,73,1);
+		border: 2px solid rgba(255,205,73,1);
 		border-radius: 20px;
 		padding: 10px 20px 50px 20px;
 	}
 
 	.resregi-form input{
 		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	.submitBtn{

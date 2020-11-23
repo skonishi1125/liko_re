@@ -135,6 +135,11 @@ button{
 	margin-bottom: 5px;
 }
 
+.badge-danger{
+	background-color: red !important;
+	margin-left: 5px;
+}
+
 .tweetClose-container a{
 	color: gray;
 	font-size: 20px;
@@ -614,8 +619,7 @@ button{
 }
 
 .tweet-wrapper{
-	max-width: 1000px;
-	border-bottom: 1px dotted black;
+	max-width: 1200px;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 }
@@ -732,6 +736,13 @@ footer{
 
 	.tweet-wrapper{
 		margin-top: 30px;
+	}
+
+	.badge-danger{
+		font-size: 10px !important;
+	}
+	.commentMyImg{
+		display: none;
 	}
 
 	footer{
@@ -964,7 +975,5 @@ footer{
 	.changeResult-title{
 		margin-top: 40px;
 	}
-
-
 
 }

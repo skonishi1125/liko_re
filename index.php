@@ -533,7 +533,7 @@ $iconExt = substr($member['picture'],-4);
                     <p><b>タイトル</b></p>
                     <textarea name="title" cols="50" rows="1"><?php echo h($_POST['title']) ?></textarea>
                     <!-- message -->
-                    <p><b>内容</b><span class="checkRed">(必須)</span></p>   
+                    <p><b>内容</b><span class="badge badge-danger">必須</span></p>   
                     <textarea name="message" cols="50" rows="5"><?php echo h($_POST['message']) ?></textarea>
                     <input type="hidden" name="reply_post_id" 
                         value="<?php echo h($_REQUEST['res']); ?>">
@@ -610,25 +610,51 @@ $iconExt = substr($member['picture'],-4);
 
         <div class="tweet-wrapper col-md-10">
             <?php echo $exif_data['Orientation']; ?>
-        <?php if(!empty($error)): ?>
+
+            <!-- アラート -->
+            <?php if(!empty($error)): ?>
+            <div class="alert alert-danger" role="alert">
+                <?php if(!empty($error)): ?>
+                <h5 class="alert-heading">投稿にエラーがありました。</h5>
+                <hr>
+                <?php endif; ?>
+                <?php if($error['message'] == 'blank' || $error['review'] == 'blank'): ?>
+                <p>・無記入のままで投稿することはできません。</p>
+                <?php endif; ?>
+                <?php if($error['postpic'] == 'type'): ?>
+                <p>・非対応の画像ファイルです。拡張子を確認ください。</p>
+                <?php endif; ?>
+                <?php if($error['video'] == 'type'): ?>
+                <p>・URLに誤りがあります。現状YouTube動画のみの対応となっています。</p>
+                <p>　投稿例：https://www.youtube.com/watch?v=ABCDEFGHIJK</p>
+                <p>　(URLの末尾がv=[動画のID]で終わるように投稿してください)</p>
+                <?php endif; ?>
+            </div>            
+
+            <!--
             <div class="error-wrapper">
                 <div class="error-container">
                     <?php if(!empty($error)): ?>
                     <p class="checkRed">※投稿にエラーがありました。</p>
                     <?php endif; ?>
+
                     <?php if($error['message'] == 'blank' || $error['review'] == 'blank'): ?>
                     <p class="checkRed">・無記入のままで投稿することはできません。</p>
                     <?php endif; ?>
+
                     <?php if($error['postpic'] == 'type'): ?>
                     <p class="checkRed">・非対応の画像ファイルです。拡張子を確認ください。</p>
                     <?php endif; ?>
+
                     <?php if($error['video'] == 'type'): ?>
                     <p class="checkRed">・URLに誤りがあります。現状YouTube動画のみの対応となっています。</p>
                     <p class="checkRed">　投稿例：https://www.youtube.com/watch?v=ABCDEFGHIJK</p>
                     <p class="checkRed">　(URLの末尾がv=[動画のID]で終わるように投稿してください)</p>
-                    <?php endif; ?>            
+                    <?php endif; ?>
                 </div>
             </div>
+        -->
+
         <?php endif; ?>
 
             <div class="col-md-12 mobileUser-wrapper res-phone">
