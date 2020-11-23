@@ -224,7 +224,7 @@ if($_REQUEST['action'] == 'rewrite'){
 
 
 
-        <div class="container-fluid">
+        <div class="container">
 
             <div class="col-md-12 intro-wrapper">
                 <div class="center-bar"></div>
