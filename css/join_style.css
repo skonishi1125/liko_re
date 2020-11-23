@@ -350,19 +350,23 @@ button{
 
 }
 
-.top-btn button{
+.top-btn a{
 	color: white;
 	font-size: 20px;
 	background-color: rgba(88,117,198,1);
-	padding: 10px 50px;
-	border-radius: 10px;	
+	padding: 10px 40px;
+	border-radius: 10px;
 }
 
-.top-btn button:hover{
+.top-btn a:hover{
 	text-decoration: none;
 	color: white;
 	cursor: pointer;
 	background-color: rgba(120,140,230,1);	
+}
+
+.top-btn i{
+	margin-left: 5px;
 }
 
 .no-js .back-to-top{

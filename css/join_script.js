@@ -32,7 +32,7 @@ $(document).ready(function(){
 		$('.modal-background').hide();
 		$('.tweetModal-wrapper').hide();
 		$('.searchModal-wrapper').hide();
-		$('.configModal-wrapper').hide();		
+		$('.configModal-wrapper').hide();
 	});
 
 
@@ -41,6 +41,7 @@ $(document).ready(function(){
 $(function(){
 
 	/*画面のスクロール*/
+	/*
 	$('.back-to-top').each(function(){
 		var el = scrollableElement('html','body');
 
@@ -69,7 +70,6 @@ $(function(){
 		}
 		return [];
 	}
-
-
+	*/
 
 });

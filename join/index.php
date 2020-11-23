@@ -382,17 +382,13 @@ if($_REQUEST['action'] == 'rewrite'){
             </div>
         </div><!-- container 20.11.8追加 -->
 
-
         <div class="container">
             <div class="col-md-12 top-btn">
-                <button type="button" class="back-to-top">
-                    Topへ戻る
-                    <i class="fas fa-angle-up"></i>
+                <a  href="#top" class="back-to-top">
+                    Topへ戻る<i class="fas fa-angle-up"></i>
                 </a>
             </div>
         </div>
-
-        <!-- ipadでも動くようにしなさい progate頼ってみてもいいかも -->
 
 
         <footer>
